@@ -81,7 +81,6 @@ MIMIC-IV Dataset
 | Non-AKI | 31,050 | 75.0% |
 | Total | 41,409 | 100% |
 
-![AKI Label Distribution](./images/fig_01_aki_label_distribution.png)
 
 **분석 결과**
 
@@ -93,14 +92,12 @@ MIMIC-IV Dataset
 
 #### ① Creatinine
 
-![Creatinine Distribution](./images/fig_05_cr_max_by_aki_zoom.png)
 
 - AKI 환자군에서 상대적으로 높은 Creatinine 수치 관찰
 - 신기능 관련 지표와 AKI 발생 여부의 연관성 확인
 
 #### ② Urine Output
 
-![Urine Output Distribution](./images/fig_06_urine_24h_by_aki_zoom.png)
 
 - AKI 환자군에서 상대적으로 낮은 24시간 소변량 관찰
 - KDIGO 기반 AKI 진단 기준과 연관된 데이터 분포 확인
@@ -182,9 +179,6 @@ Random Forest의 AUROC가 근소하게 높았으나, XGBoost는 AUPRC, Recall, F
 | Specificity | 0.9777 |
 | **F1-score** | **0.9093** |
 
-![Final Model Performance](./images/fig_metrics_compact.png)
-
-![Confusion Matrix](./images/fig_confusion_matrix_test.png)
 
 ### 주요 결과
 
@@ -206,7 +200,6 @@ Random Forest의 AUROC가 근소하게 높았으나, XGBoost는 AUPRC, Recall, F
 
 ### SHAP Feature Importance
 
-![SHAP Feature Importance](./images/shap_summary_bar.png)
 
 ### 주요 분석 결과
 
