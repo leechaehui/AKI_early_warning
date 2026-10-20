@@ -67,31 +67,6 @@ MIMIC-IV Dataset
 | 사용 모델 | Logistic Regression, Random Forest, XGBoost |
 
 ---
-### 📂 Repository Structure
-
-본 프로젝트는 SQL 기반 데이터 구축부터 머신러닝 모델링, 성능 평가, CDSS 프로토타입 구현까지의 과정을 포함합니다.
-
-| Directory | Description |
-|---|---|
-| [Scripts](./chym_aki-dev/Scripts/) | SQL 기반 ICU 코호트 구축, AKI 라벨링 및 임상 변수 추출 |
-| [chym_proj](./chym_aki-dev/chym_proj/) | XGBoost 모델 학습, 성능 평가, SHAP 분석 및 CDSS 구현 |
-| [kidney_nlp](./chym_aki-dev/kidney_nlp/) | 임상 텍스트 관련 NLP 작업 및 실험 코드 |
-
-### 🔍 Key Analysis Files
-
-| Analysis Stage | File | Description |
-|---|---|---|
-| Cohort Definition | `01_cohort.sql` | 분석 대상 ICU 환자 선정 |
-| AKI Labeling | `02_aki_labels.sql` | AKI 발생 여부 라벨링 |
-| Feature Engineering | `03_features_ischemic_(트랙B).sql` | 허혈·관류 관련 임상 변수 추출 |
-| Model Training | `aki_train_model(1).py` | XGBoost 기반 모델 학습 |
-| Model Evaluation | `aki_evaluation(3).py` | 모델 성능 평가 |
-| Threshold Tuning | `aki_threshold_tuning(2).py` | 예측 임계값 조정 |
-| Explainable AI | `aki_shap(4).py` | SHAP 기반 변수 중요도 분석 |
-
-프로젝트의 주요 분석 흐름은 **Cohort Definition → AKI Labeling → Feature Engineering → Model Training → Evaluation → SHAP Analysis**로 구성됩니다.
-
----
 
 ## 03. Exploratory Data Analysis | 탐색적 데이터 분석
 
